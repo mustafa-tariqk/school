@@ -1,0 +1,1 @@
+friendship = open("frindship.txt", "r")
