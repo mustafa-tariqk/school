@@ -1,5 +1,5 @@
 name = input("Please enter your name: ")
-if name.isascii():
-    print(name.isalpha())
+if name.isalpha():
+    print(name.upper())
 else:
     print("Try again. ")
