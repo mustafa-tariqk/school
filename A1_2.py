@@ -7,7 +7,6 @@ Date:2020-09-30
 friendships = [line.strip().split() 
 for line in open("friendship.txt")] # Converts data in file into a 2D list.
 
-
 friendships_dict = {}  # Creating a dictionary for all friendships in the list.
 for friends in friendships:
 
