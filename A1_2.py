@@ -33,3 +33,4 @@ for name in friendships_dict:  # Looks at name and all of their friends.
     if len(friendships_dict[name]) != 1:
         print("s", end="")
     print(".") # Above lines make sure grammar is correct.
+    
