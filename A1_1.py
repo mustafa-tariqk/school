@@ -17,3 +17,4 @@ while running:  # Keeps running file until user choses to exit.
             
     else:  # Asks user to input properly.
         print("Please try again and enter your name.")
+        
