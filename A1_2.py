@@ -7,14 +7,11 @@ Date:2020-09-30
 """
 
 friendships = [] # Converts data in file into a 2D list.
-try:
-    file_name = open("friendship.txt", "r")  
+file_name = open("friendship.txt", "r")  
+line = file_name.readline()
+while line != "":
+    friendships.append(line.split())
     line = file_name.readline()
-    while line != "":
-        friendships.append(line.split())
-        line = file_name.readline()
-except:
-    print("A file error has occured.")
 
 
 friendships_dict = {}  # Creating a dictionary for friendships in the 2D list.
