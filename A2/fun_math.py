@@ -4,10 +4,12 @@ def cal_factorial(x):
     else: 
         return x * cal_factorial(x-1)
 
-def list_multiples(number, length):
+def list_multiples(number, length): 
     multiples = []
-    for i in range(1,length+1):
-        multiples.append(number * i)
+    counter = 1
+    while counter <=length:
+        multiples += [number*counter]
+        counter += 1
     return multiples
 
 def find_max(a_list):
