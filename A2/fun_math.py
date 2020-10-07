@@ -21,10 +21,8 @@ def list_multiples(number, length):
     List of multiples of number until length.
     """
     multiples = []
-    counter = 1
-    while counter <= length:
-        multiples += [number*counter]
-        counter += 1
+    for i in range(1,length+1):
+        multiples += [number*i]
     return multiples
 
 def find_max(a_list):
