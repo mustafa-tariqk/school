@@ -24,16 +24,17 @@ def task1():
     """ Input and output for task 1.
     """
     base = int(input("Please enter a positive integer: "))
-    if base <= 0: #  Checks if integer is positive
+    if base <= 0: #  Makes sure base is a positive integer.
         raise ValueError
     print(fun_math.cal_factorial(base), "\n")
 
 def task2():
     """ Input and output for task 2.
     """
-    number, length = map(int, input("Please enter a non-negative number and a length spaced: ").split())
-    if number < 0 or length <= 0: #  Checks if non-negative and positive.
-        raise ValueError
+    number, length = map(int, input \
+    ("Please enter a non-negative number and a length spaced: ").split())
+    if number < 0 or length <= 0: 
+        raise ValueError #  Makes sure values are non-negative and positive.
     print(fun_math.list_multiples(number, length), "\n")
 
 def task3():

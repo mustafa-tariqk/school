@@ -6,7 +6,6 @@ Section: 001
 Date:2020-10-14
 """
 
-
 def cal_factorial(x):
     """ Returns factorial of an integer.
     Calculates recursively.
@@ -49,7 +48,7 @@ if __name__ == "__main__": #  Testing cases for each function
     #  Test cases for list_multiples(number, length)
     print(list_multiples(2,3))
     print(list_multiples(3,2))
-    print(list_multiples(0,12))
+    print(list_multiples(1,12))
     print(list_multiples(7,5))
     print(list_multiples(5,7))
 
