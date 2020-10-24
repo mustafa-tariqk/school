@@ -6,7 +6,7 @@ Section: 001
 Date:2020-09-30
 """
 
-friendships = [] # Converts data in file into a 2D list.
+friendships = []  # Converts data in file into a 2D list.
 file_name = open("friendship.txt", "r")  
 line = file_name.readline()
 while line != "":
