@@ -44,20 +44,20 @@ def task2():
 def task3():
     """ Input and output for task 3.
     """
-    a_list = list(map(int, \
-                      input("Please enter a list of spaced integers: ") \
+    a_list = list(map(int,
+                      input("Please enter a list of spaced integers: ")
                       .split()))  # Converts one line of spaced integers into a list.
     print(fun_math.find_max(a_list), "\n")
 
 
 def main():
-    """ Function for exceution of program.
+    """ Function for execution of program.
     """
     while True:  # Keeps asking for input until valid.
-        task = input("Please choose your task:\n" \
-                     "1 – calculate factorial\n" \
-                     "2 - generate a list of multiples\n" \
-                     "3 – find max number in a list\n" \
+        task = input("Please choose your task:\n"
+                     "1 – calculate factorial\n"
+                     "2 - generate a list of multiples\n"
+                     "3 – find max number in a list\n"
                      "4 - exit the program\n")
 
         #  Executes task based on input.
