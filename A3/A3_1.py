@@ -8,6 +8,9 @@ Date:2020-11-18
 
 
 def get_bound():
+    """This function gets the lower and upper bounds of the guessed
+    number while ensuring formatting is correct.
+    """
     while True:
         try:
             lower = int(input("Please enter the lower bound: "))
@@ -19,6 +22,9 @@ def get_bound():
 
 
 def main():
+    """ This function implements a binary search algorithm to
+    find the guessed number.
+    """
     lower_bound, upper_bound = get_bound()
 
     while lower_bound <= upper_bound:
