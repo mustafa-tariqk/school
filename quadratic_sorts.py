@@ -1,4 +1,5 @@
-""" This program does something
+""" This program contains functions that sort lists while recording
+their performance.
 
 Author: Mustafa Tariq
 Student Number: 20212856
@@ -8,10 +9,13 @@ Date:2020-11-18
 
 
 def insertion(a_list):
+    """ Sorts a list using insertion sort while counting how many outer loops,
+     inner loops and swaps.
+    """
     outer_loops = 0
     inner_loops = 0
     num_swaps = 0
-    a = list(a_list)
+    a = list(a_list)  # Alias used so list doesn't stay sorted.
 
     for key in range(1, len(a)):
         outer_loops += 1
@@ -26,6 +30,9 @@ def insertion(a_list):
 
 
 def selection(a_list):
+    """ Sorts a list using selection sort while counting how many outer loops,
+     inner loops and swaps.
+    """
     outer_loops = 0
     inner_loops = 0
     num_swaps = 0
@@ -46,6 +53,9 @@ def selection(a_list):
 
 
 def bubble(a_list):
+    """ Sorts a list using bubble sort while counting how many outer loops,
+     inner loops and swaps.
+    """
     outer_loops = 0
     inner_loops = 0
     num_swaps = 0
@@ -68,6 +78,7 @@ if __name__ == "__main__":
     worst = [8.446986266915214, 4.266319822227643, 2.6602082223312298, 2.127678433877384, 1.2233535181237896]
     rand = [5.610284227291091, 6.836574614181809, 2.6909325116300153, 6.755964711962904, 5.335545671292289]
 
+    # Checks if counters work for all sorting algorithms
     print(insertion(best))
     print(insertion(worst))
     print(insertion(rand))
