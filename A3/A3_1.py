@@ -15,6 +15,8 @@ def get_bound():
         try:
             lower = int(input("Please enter the lower bound: "))
             upper = int(input("Please enter the upper bound: "))
+            if lower > upper:
+                raise ValueError
             break
         except ValueError:
             print("That is not a valid input. Please try again.")
