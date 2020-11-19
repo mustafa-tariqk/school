@@ -31,8 +31,8 @@ def hopping_game(n):
 
 if __name__ == "__main__":
     # All cases match correct output.
-    hopping_game(1)
-    hopping_game(2)
-    hopping_game(3)
-    hopping_game(4)
+    print(hopping_game(1))
+    print(hopping_game(2))
+    print(hopping_game(3))
+    print(hopping_game(4))
 
