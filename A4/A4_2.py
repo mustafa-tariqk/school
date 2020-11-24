@@ -14,17 +14,17 @@ def hopping_game(n):
     if n == 0:  # Base cases.
         return ['0']
     elif n == 1:
-        return ['01']
+        return ['0-1']
     elif n == 2:
-        return ['012', '02']
+        return ['0-1-2', '0-2']
     else:
         one_square_hops = hopping_game(n - 1)  # Finds all hop paths.
         two_square_hops = hopping_game(n - 2)
 
         for i in range(len(one_square_hops)):  # Proper formatting.
-            one_square_hops[i] += str(n)
+            one_square_hops[i] += ("-" + str(n))
         for j in range(len(two_square_hops)):
-            two_square_hops[j] += str(n)
+            two_square_hops[j] += ("-" + str(n))
 
         return one_square_hops + two_square_hops
 
